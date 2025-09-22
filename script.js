@@ -2,10 +2,13 @@ $(document).ready(function() {
     $('.irPara').on('click', function (e) {
         e.preventDefault(); // evita o salto instantâneo
 
-        const targetId = $(this).attr('href'); // pega o destino (#inicio, #personagens, #sobre)
+    $('.irPara').on('click', (function (e) {
+        e.preventDefaut(); //Evita o salto direto 
+
+        const targetId = $(this).attr('href'); //Pega as identificações de destino
 
         $('html, body').animate({
-            scrollTop: $(targetId).offset().top
-        }, 600); // 600ms = rolagem suave
-    });
+            scrollTop: $(targetId).offset().top //escrola suavemente ate o elemento q eu pedi
+        }, 800);
+    }))
 });
