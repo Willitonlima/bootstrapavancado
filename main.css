@@ -34,7 +34,7 @@ header img {
 }
 
 .background-site, body {
-    background-image: url(./img/Wild\ West\ Collage\ in\ Black\ &\ White.png);
+    background-image: url(./img/Logos/Wild\ West\ Collage\ in\ Black\ &\ White.png);
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -94,7 +94,6 @@ footer {
     align-items: center;
     padding: 20px 0;
     color: aliceblue;
-
 }
 
 footer img {
@@ -130,4 +129,52 @@ footer img {
 .accordion-body {
     background-color: rgb(14, 13, 13);
     color: white;
+}
+
+
+@media (max-width: 600px) {
+    .nav-item {
+        display: none;
+    }
+    
+    header {
+    background-color: rgb(14, 13, 13);
+    background: rgb(14, 13, 13);
+    display: block;
+    align-items: center;
+    padding: 0 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+header img {
+    background-attachment: fixed;
+    width: 67vh;
+}
+
+    .background-site, body {
+        background-image: url(./img/Wild\ West\ Collage\ in\ Black\ &\ White.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+}
+
+footer h5 {
+    font-size: small;
+}
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+    header img {
+    background-attachment: fixed;
+    width: 30vh;
+}
+
+.nav-link {
+    font-family: "chinese-rocks";
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+
 }

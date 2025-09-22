@@ -1,26 +1,32 @@
+<!--Nao está da forma q eu queria, melhorar e adicionar funcionalidades q ficaram para trás-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pr-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Read Dead Redemption 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./main.css">
 
 </head>
 
 <body>
     <!--CABEÇALHO-->
     <header>
-        <img class="logoimg" src="./img/pngimg.com - red_dead_redemption_PNG21.png" alt="Logo Read Deat Redemption 2">
+        <img class="logoimg" src="./img/Logos/pngimg.com - red_dead_redemption_PNG21.png" alt="Logo Read Deat Redemption 2">
+
+        <!--Implementar ainda a rolagem de tela para as respectivas seções-->
 
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link irPara"  href="#inicio">Inicio</a>
+                <a class="nav-link irPara" href="#inicio">Inicio</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link irPara" href="#personagens">Personagens</a>
+                <div id="personagens">
+                    <a class="nav-link irPara" href="#personagens">Personagens</a>
+                </div>
             </li>
             <li class="nav-item">
                 <a class="nav-link irPara" href="#sobre">sobre</a>
@@ -28,22 +34,37 @@
         </ul>
     </header>
 
+    <!--Rolagem NÃO FUNCIONA da forma q Deveria-->
+    <section id="inicio">
+    </section>
+
+    <section id="personagens">
+    </section>
+
+    <section id="sobre">
+    </section>
+
+    <!--Seção Inicio-->
+    <div id="inicio" class="background-site">
+        <!--Aqui vai pro carrossel-->
+    </div>
+
     <!--CONTEUDO DO SITE-->
     <div class="background-site">
         <!--CARROSSEL-->
         <div id="carouselFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active" data-bs-interval="3000">
-                    <img src="./img/imagemgameplay1.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/carrousel/imagemgameplay1.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/red_dead_redemption_2_pc_launch_screen_7.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/carrousel/imagemgameplay3.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/imagemgameplay3.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/carrousel/imagemgameplay4.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item" data-bs-interval="3000">
-                    <img src="./img/imagemgameplay4.jpg" class="d-block w-100" alt="...">
+                    <img src="./img/carrousel/red_dead_redemption_2_pc_launch_screen_7.jpg" class="d-block w-100" alt="...">
                 </div>
             </div>
 
@@ -64,7 +85,7 @@
             <div class="row align-items-start"> 
                 <div class="col">
                         <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                            <img src="./img/Arthur_Morgan_Level_2.jpg" style="width: 20rem;" alt="...">
+                            <img src="./img/personagens/Arthur_Morgan_Level_2.jpg" style="width: 20rem;" alt="...">
                             <h2>Arthur</h2>
                             <div class="card-body">
                                 <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no Velho Oeste, unindo história marcante, mundo aberto imersivo e fortes dilemas morais.</p>
@@ -74,7 +95,7 @@
 
                     <div class="col">
                         <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                            <img src="./img/RDR2_Dutch_van_der_Linde_PC.png" style="width: 20rem;" alt="...">
+                            <img src="./img/personagens/RDR2_Dutch_van_der_Linde_PC.png" style="width: 20rem;" alt="...">
                             <h2>Dutch</h2>
                             <div class="card-body">
                                 <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no Velho Oeste, unindo história marcante, mundo aberto imersivo e fortes dilemas morais.</p>
@@ -84,7 +105,7 @@
 
                     <div class="col">
                         <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                            <img src="./img/John_Marston_1907_Cowboy_Outfit.jpg" alt="...">
+                            <img src="./img/personagens/John_Marston_1907_Cowboy_Outfit.jpg" alt="...">
                             <h2>John</h2>
                             <div class="card-body">
                                 <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no Velho Oeste, unindo história marcante, mundo aberto imersivo e fortes dilemas morais.</p>
@@ -96,7 +117,7 @@
             <div class="row align-items-center">
                 <div class="col">
                     <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                        <img src="./img/Micah_.jpg" alt="...">
+                        <img src="./img/personagens/Micah_.jpg" alt="...">
                         <h2>Micah</h2>
                         <div class="card-body">
                             <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no
@@ -108,7 +129,7 @@
 
                 <div class="col">
                     <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                        <img src="./img/Hosea_injured.jpg" alt="...">
+                        <img src="./img/personagens/Hosea_injured.jpg" alt="...">
                         <h2>Hosea</h2>
                         <div class="card-body">
                             <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no
@@ -120,7 +141,7 @@
 
                 <div class="col">
                     <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                        <img src="./img/Sadie.png" alt="...">
+                        <img src="./img/personagens/Sadie.png" alt="...">
                         <h2>Sadie</h2>
                         <div class="card-body">
                             <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no
@@ -134,7 +155,7 @@
             <div class="row align-items-end">
                 <div class="col">
                     <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                        <img src="./img/Bill1899.png" alt="...">
+                        <img src="./img/personagens/Bill1899.png" alt="...">
                         <h2>Bill</h2>
                         <div class="card-body">
                             <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no
@@ -146,7 +167,7 @@
 
                 <div class="col">
                     <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                        <img src="./img/Javier_RDR2.jpg" alt="...">
+                        <img src="./img/personagens/Javier_RDR2.jpg" alt="...">
                         <h2>Javier</h2>
                         <div class="card-body">
                             <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no
@@ -158,7 +179,7 @@
 
                 <div class="col">
                     <div class="card text-white bg-dark mb-3 h-100" style="width: 20rem;">
-                        <img src="./img/Untitled.jpg" style="width: 20rem;" alt="...">
+                        <img src="./img/personagens/Untitled.jpg" style="width: 20rem;" alt="...">
                         <h2>Charles</h2>
                         <div class="card-body">
                             <p>Red Dead Redemption 2 é um jogo da Rockstar Games que mostra a vida de Arthur Morgan no
@@ -230,8 +251,8 @@
     </div>
 
     <footer>
-        <img src="./img/pngwing.com.png" alt="">
-        <h5>2025 © Rockstar - Todos os Direito Reservados</h5>
+        <img src="./img/Logos/pngwing.com.png" alt="">
+        <h5>2025 © Rockstar Games - Todos os Direito Reservados</h5>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
